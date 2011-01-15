@@ -1544,13 +1544,13 @@
             throw "Count is out of range.";
         }
 
-        var ret = new Enumerable();
+        var ret = [];
 
         for (var i = start; i < start + count; i++) {
-            ret.add(i);
+            ret.push(i);
         }
 
-        return ret;
+        return new Enumerable(ret);
     };
 
     Enumerable.repeat = function (item, count) {
@@ -1568,17 +1568,27 @@
             throw "Count is out of range.";
         }
 
-        var ret = new Enumerable();
+        var ret = [];
 
         for (var i = 0; i < count; i++) {
-            ret.add(item);
+            ret.push(item);
         }
 
-        return ret;
+        return new Enumerable(ret);
     };
 
     // Give the init function the Enumerable prototype for later instantiation
     Enumerable.fn.init.prototype = Enumerable.fn;
 
-	exports.enumerable = Enumerable;
+	exports.create = function (arg1) {
+		return new Enumerable(arg1);
+	};
+	
+	exports.range = function (start, count) {
+		return Enumerable.range(start, count);
+	};
+	
+	exports.repeat = function (item, count) {
+		return Enumerable.repeat(item, count);
+	};
 }());

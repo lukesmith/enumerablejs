@@ -19,7 +19,3 @@ animals.push({ type: AnimalType.Fish, name: "Scales", age: 2, children: [] });
 animals.push({ type: AnimalType.Fish, name: "Goldie", age: 1, children: [] });
 
 exports.animals = animals;
-
-exports.test = function(name, t) {
-	t();
-};

@@ -1,8 +1,8 @@
 var common = require('../common');
-var linq4node = require('../linq4node');
+var enumerable = require('../enumerable');
 
 exports["Enumerable of simple types"] = function(test) {
-    var source = linq4node.enumerable([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+    var source = enumerable.create([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
     var result = source.copy();
 
     test.equal(source.count() === result.count(), true, "Source Enumerable has the same number of items as result");
@@ -10,7 +10,7 @@ exports["Enumerable of simple types"] = function(test) {
 };
 
 exports["Enumerable query of simple types"] = function(test) {
-    var source = linq4node.enumerable([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]).where(function(item) {
+    var source = enumerable.create([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]).where(function(item) {
         return item > 3;
     });
 
