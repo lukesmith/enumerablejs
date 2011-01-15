@@ -1,5 +1,5 @@
 var common = require('../common');
-var enumerable = require('../enumerable');
+var enumerable = require('../');
 
 exports["IndexOf a simple type not occurring"] = function(test) {
     var source = enumerable.create([3, 2, 7, 1, 5, 6, 3, 4]);

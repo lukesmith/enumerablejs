@@ -8,8 +8,7 @@
   ],
   "homepage": "http://lukesmith.github.com/enumerablejs",
   "keywords": ["linq", "enumerable"],
-  "directories": { "lib": "./lib/enumerable" },
-  "main": "enumerable",
+  "main": "./index",
   "repository" :
     { "type" : "git", "url" : "http://github.com/lukesmith/enumerablejs.git" }
 }

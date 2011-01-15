@@ -1,5 +1,5 @@
 var common = require('../common');
-var enumerable = require('../enumerable');
+var enumerable = require('../');
 
 exports["Reverse all elements"] = function(test) {
     var source = enumerable.create([5, 2, 63, 1, 3]);

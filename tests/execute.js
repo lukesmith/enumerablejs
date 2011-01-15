@@ -1,5 +1,5 @@
 var common = require('../common');
-var enumerable = require('../enumerable');
+var enumerable = require('../');
 
 exports["Execute Enumerable.Where.Select"] = function(test) {
     var source = enumerable.create(common.animals);

@@ -1,5 +1,5 @@
 var common = require('../common');
-var enumerable = require('../enumerable');
+var enumerable = require('../');
 
 exports["Get a Range of integers as an Enumerable"] = function(test) {
     var result = enumerable.range(0, 10);

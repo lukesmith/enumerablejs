@@ -1,5 +1,5 @@
 var common = require('../common');
-var enumerable = require('../enumerable');
+var enumerable = require('../');
 
 exports["Get the distinct simple types"] = function(test) {
     var source = enumerable.create([0, 2, 2, 6, 2, 3, 9, 10, 5, 3, 4, 5, 1, 4]);

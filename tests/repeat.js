@@ -1,5 +1,5 @@
 var common = require('../common');
-var enumerable = require('../enumerable');
+var enumerable = require('../');
 
 exports["Repeat a simple type as an Enumerable"] = function(test) {
     var result = enumerable.repeat(6, 10);

@@ -1,5 +1,5 @@
 var common = require('../common');
-var enumerable = require('../enumerable');
+var enumerable = require('../');
 
 exports["SelectMany from Enumerable of complex types"] = function(test) {
     var source = enumerable.create(common.animals);

@@ -1,5 +1,5 @@
 var common = require('../common');
-var enumerable = require('../enumerable');
+var enumerable = require('../');
 
 exports['Create an enumerable without a parameter'] = function(test) {
     var result = enumerable.create();

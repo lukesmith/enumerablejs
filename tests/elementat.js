@@ -1,5 +1,5 @@
 var common = require('../common');
-var enumerable = require('../enumerable');
+var enumerable = require('../');
 
 exports["Get the element at an index"] = function(test) {
     var source = enumerable.create([10, 11, 12, 13, 14, 15, 16, 17, 18, 19]);

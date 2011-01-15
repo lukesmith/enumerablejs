@@ -1,5 +1,5 @@
 var common = require('../common');
-var enumerable = require('../enumerable');
+var enumerable = require('../');
 
 exports["Single element from Enumerable of simple type"] = function(test) {
     var source = enumerable.create([5]);

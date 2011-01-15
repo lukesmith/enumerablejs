@@ -1,5 +1,5 @@
 var common = require('../common');
-var enumerable = require('../enumerable');
+var enumerable = require('../');
 
 var pets = [];
 pets.push({ type: common.AnimalType.Dog, name: "Rover", age: 13, children: [] });

@@ -1,5 +1,5 @@
 var common = require('../common');
-var enumerable = require('../enumerable');
+var enumerable = require('../');
 
 exports["GroupBy a simple type as key"] = function(test) {
     var source = enumerable.create(common.animals);
