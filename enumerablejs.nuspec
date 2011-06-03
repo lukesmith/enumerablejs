@@ -16,6 +16,6 @@
     <tags>linq enumerablejs javascript</tags>
   </metadata>
   <files>
-    <file>lib/enumerable/index.js</file>
+    <file src="lib\enumerable\index.js" target=""></file>
   <files>
 </package>
