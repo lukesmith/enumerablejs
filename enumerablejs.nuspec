@@ -13,7 +13,7 @@
     </description>
     <summary>enumerablejs is a JavaScript api with the linq extension methods from the .NET Framework.</summary>
     <language>en-US</language>
-    <tags>linq, enumerablejs, javascript</tags>
+    <tags>linq enumerablejs javascript</tags>
   </metadata>
   <files>
     <file>lib/enumerable/index.js</file>
