@@ -1,0 +1,21 @@
+<html>
+
+<head>
+<script type="text/javascript" src="../build/browser.min.js"></script>
+</head>
+
+<body>
+<script type="text/javascript">
+var names = ['john', 'claire', 'mary'];
+
+var enumerable = Enumerable.create(names);
+
+enumerable.where(function(i) { return i=="john"; }).each(function(i) {
+  document.write(i);
+});
+
+
+</script>
+</body>
+
+</html>

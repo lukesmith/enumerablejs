@@ -2,20 +2,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>enumerablejs</id>
-    <title>enumerablejs</title>
     <version>1.0.0</version>
+    <title>enumerablejs</title>
     <authors>Luke Smith</authors>
+    <owners>Luke Smith</owners>
     <licenseUrl>https://github.com/lukesmith/enumerablejs/blob/master/license</licenseUrl>
     <projectUrl>https://github.com/lukesmith/enumerablejs</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>
-        enumerablejs brings the .NET linq api to javascript.
-    </description>
+    <description>enumerablejs brings the .NET linq api to javascript.</description>
     <summary>enumerablejs is a JavaScript api with the linq extension methods from the .NET Framework.</summary>
     <language>en-US</language>
     <tags>linq enumerablejs javascript</tags>
   </metadata>
   <files>
-    <file src="lib\enumerable\index.js" target=""></file>
-  <files>
+    <file src="build\browser.js" target="content\Scripts\enumerablejs.js" />
+    <file src="build\browser.min.js" target="content\Scripts\enumerablejs.min.js" />
+  </files>
 </package>
